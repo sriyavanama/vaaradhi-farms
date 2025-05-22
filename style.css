@@ -1196,14 +1196,16 @@ html {
   }
 
   /* Ensure proper mobile display for banner */
-  .banner {
-    height: 60vh; /* Shorter height for mobile */
+    .banner {
+    height: auto; /* Auto height to accommodate content */
+    max-height: 60vh; /* Maximum height for mobile */
   }
   
   .slide img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
+    max-height: 60vh;
   }
 
   .explore-container::-webkit-scrollbar-thumb {
